@@ -1,5 +1,5 @@
 
-module.exports = (settings) =>{
+module.exports = (settings) => {
   const { publicDir } = settings;
 
   return {

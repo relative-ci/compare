@@ -35,7 +35,7 @@ module.exports = (settings) => {
                   path: rootDir,
                 },
               },
-            }
+            },
           ],
           include: [
             /src/,
@@ -52,4 +52,4 @@ module.exports = (settings) => {
       }),
     ],
   };
-}
+};
