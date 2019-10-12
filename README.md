@@ -1,5 +1,6 @@
 # Web Compare
 
+[![Build Status](https://travis-ci.org/relative-ci/compare.svg?branch=master)](https://travis-ci.org/relative-ci/compare)
 [![Relative CI](https://img.shields.io/badge/RelativeCI-enabled-brightgreen.svg)](https://app.relative-ci.com/projects/og7ULMMCOgGWXBxRJocI)
 
 Side by side comparison for webpack/lighthouse/browsertime stats - https://compare.relative-ci.com.
