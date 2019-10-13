@@ -1,5 +1,5 @@
 {
-  "name": "@bundle-stats/web-compare",
+  "name": "@relative-ci/compare",
   "version": "1.10.0",
   "description": "Side by side comparison for webpack/lighthouse/browsertime stats",
   "main": "index.js",
@@ -29,12 +29,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bundle-stats/web-compare.git"
+    "url": "git+https://github.com/relative-ci/compare.git"
   },
   "bugs": {
-    "url": "https://github.com/bundle-stats/web-compare/issues"
+    "url": "https://github.com/relative-ci/compare/issues"
   },
-  "homepage": "https://github.com/bundle-stats/web-compare/#readme",
+  "homepage": "https://github.com/relative-ci/compare/#readme",
   "jest": {
     "transform": {
       "\\.js$": "babel-jest"
