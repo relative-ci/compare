@@ -18,7 +18,7 @@ const App = () => (
         <div {...sideProps}>
           <a
             href="https://github.com/relative-ci/bundle-stats"
-            title="Go to Github project"
+            title="View relative-ci/bundle-stats project on Github"
             className={styles.headerBundleStats}
           >
             <Logo className={styles.headerBundleStatsLogo} />
@@ -37,8 +37,8 @@ const App = () => (
             className={styles.headerGithubLogo}
             kind="github"
             as="a"
-            href="https://github.com/bundle-stats/bundle-stats/tree/master/packages/web-compare"
-            title="Go to Github"
+            href="https://github.com/relative-ci/bundle-stats"
+            title="View relative-ci/compare project on Github"
           />
         </div>
       )}
