@@ -4,8 +4,8 @@ module.exports = () => ({
   resolve: {
     extensions: ['.jsx', '.json', '.js'],
     alias: {
-      react: 'preact',
-      'react-dom': 'preact',
+      react: 'preact/compat',
+      'react-dom': 'preact/compat',
       Fixtures: path.join(__dirname, '../../fixtures'),
     },
   },
