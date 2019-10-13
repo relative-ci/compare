@@ -1,17 +1,33 @@
 .header {
+  padding: var(--space-xsmall) var(--space-small);
   position: relative;
 }
 
-.headerBundleStatsLogo {
-  width: 156px;
+.headerBundleStats {
+  display: flex;
+  align-items: center;
   color: inherit;
 }
 
-.headerBundleStatsLogo:active,
-.headerBundleStatsLogo:focus,
-.headerBundleStatsLogo:hover {
+.headerBundleStats:active,
+.headerBundleStats:focus,
+.headerBundleStats:hover {
   color: inherit;
   opacity: 0.7;
+}
+
+.headerBundleStatsLogo {
+  flex: 0 0 auto;
+  margin-right: var(--space-xsmall);
+  width: var(--space-large);
+  color: inherit;
+}
+
+.headerBundleStatsLogotype {
+  flex: 0 0 auto;
+  width: 140px;
+  height: var(--space-small);
+  color: inherit;
 }
 
 .headerGithubLogo {
