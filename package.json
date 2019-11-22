@@ -45,7 +45,7 @@
     ]
   },
   "dependencies": {
-    "@babel/polyfill": "7.6.0",
+    "@babel/polyfill": "7.7.0",
     "@bundle-stats/ui": "^1.10.0",
     "@bundle-stats/utils": "^1.10.0",
     "@moonwalker/orbit-ui": "1.14.5",
@@ -66,11 +66,11 @@
     "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {
-    "@babel/core": "7.6.4",
-    "@babel/plugin-proposal-class-properties": "7.5.5",
-    "@babel/plugin-proposal-object-rest-spread": "7.6.2",
-    "@babel/preset-env": "7.6.3",
-    "@babel/preset-react": "7.6.3",
+    "@babel/core": "7.7.4",
+    "@babel/plugin-proposal-class-properties": "7.7.4",
+    "@babel/plugin-proposal-object-rest-spread": "7.7.4",
+    "@babel/preset-env": "7.7.4",
+    "@babel/preset-react": "7.7.4",
     "@relative-ci/agent": "1.2.0",
     "autoprefixer": "9.7.2",
     "babel-core": "7.0.0-bridge.0",
