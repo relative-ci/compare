@@ -82,7 +82,7 @@
     "bundle-stats": "1.15.5",
     "copy-webpack-plugin": "5.1.1",
     "coveralls": "3.0.9",
-    "cross-env": "6.0.3",
+    "cross-env": "7.0.0",
     "css-loader": "3.4.2",
     "cssnano": "4.1.10",
     "dotenv": "8.2.0",
