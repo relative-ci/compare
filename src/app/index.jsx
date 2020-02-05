@@ -37,7 +37,7 @@ const App = () => (
             className={styles.headerGithubLogo}
             kind="github"
             as="a"
-            href="https://github.com/relative-ci/bundle-stats"
+            href="https://github.com/relative-ci/compare"
             title="View relative-ci/compare project on Github"
           />
         </div>
@@ -57,7 +57,7 @@ const App = () => (
     >
       <p className={styles.footerInfo}>
         <a
-          href={`https://github.com/bundle-stats/bundle-stats/releases/tag/v${__VERSION__}`}
+          href={`https://github.com/bundle-stats/compare/releases/tag/v${__VERSION__}`}
         >
           {`Version: ${__VERSION__}`}
         </a>
