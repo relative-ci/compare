@@ -3,10 +3,7 @@ import { Component } from 'preact';
 import { map } from 'lodash';
 import uuid from 'uuid/v4';
 
-import {
-  isGistUrl,
-  getGistRawUrl,
-} from '../utils/gist';
+import { isGistUrl, getGistRawUrl } from '../utils/gist';
 import fetchJSON from '../utils/fetch';
 import { syncUrlsToSearch } from '../utils/search-params';
 
@@ -53,49 +50,54 @@ const enhance = () => (BaseComponent) => {
     addSource = (url) => {
       const source = getDefaultSource(url);
 
-      this.setState(({ sources }) => ({
-        sources: [
-          ...sources,
-          source,
-        ],
-      }));
-
-      this.fetchSource(source);
-      syncSourcesWithParams(this.state.sources);
+      this.setState(
+        ({ sources }) => ({
+          sources: [...sources, source],
+        }),
+        () => {
+          syncSourcesWithParams(this.state.sources);
+          this.fetchSource(source);
+        },
+      );
     }
 
     removeSource = (source) => {
-      const { sources } = this.state;
-      const index = getSourceIndexById(sources, source.id);
+      this.setState(
+        ({ sources }) => {
+          const index = getSourceIndexById(sources, source.id);
 
-      const nextSources = [
-        ...sources.slice(0, index),
-        ...sources.slice(index + 1),
-      ];
+          const nextSources = [
+            ...sources.slice(0, index),
+            ...sources.slice(index + 1),
+          ];
 
-      syncSourcesWithParams(nextSources);
-
-      this.setState({
-        sources: nextSources,
-      });
+          return { sources: nextSources };
+        },
+        () => {
+          syncSourcesWithParams(this.state.sources);
+        },
+      );
     }
 
     updateSource = (source) => {
-      const { sources } = this.state;
-      const index = getSourceIndexById(sources, source.id);
+      this.setState(
+        ({ sources }) => {
+          const index = getSourceIndexById(sources, source.id);
 
-      const nextSources = [
-        ...sources.slice(0, index),
-        {
-          ...sources[index],
-          ...source,
+          const nextSources = [
+            ...sources.slice(0, index),
+            {
+              ...sources[index],
+              ...source,
+            },
+            ...sources.slice(index + 1),
+          ];
+
+          return {
+            sources: nextSources,
+          };
         },
-        ...sources.slice(index + 1),
-      ];
-
-      this.setState({
-        sources: nextSources,
-      });
+      );
     }
 
     fetchSource = (source) => {
