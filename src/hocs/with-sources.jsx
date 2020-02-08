@@ -23,7 +23,7 @@ const getDefaultSource = (url) => ({
   id: uuid(),
   url,
   resolvedUrl: resolveUrl(url),
-  error: false,
+  error: '',
   loading: false,
   fetched: false,
   res: {},
