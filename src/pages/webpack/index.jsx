@@ -54,7 +54,20 @@ const Webpack = (props) => {
       {!isEmpty(jobs) && (
         <div>
           <Container>
-            <Summary data={getSummaryData(jobs)} />
+            <Summary
+              data={getSummaryData(jobs)}
+              keys={[
+                'webpack.totalSizeByTypeALL',
+                'webpack.totalInitialSizeJS',
+                'webpack.totalInitialSizeCSS',
+                'webpack.cacheInvalidation',
+                'webpack.moduleCount',
+                'webpack.chunkCount',
+                'webpack.assetCount',
+                'webpack.packageCount',
+                'webpack.duplicatePackagesCount',
+              ]}
+            />
           </Container>
           <Container className={css.tabs}>
             <Match>
