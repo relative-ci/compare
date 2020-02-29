@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
-import { BundleModules, Container } from '@bundle-stats/ui';
+import { Container } from '@bundle-stats/ui/lib-esm/ui/container';
+import { BundleModules } from '@bundle-stats/ui/lib-esm/components/bundle-modules';
 
 const Modules = (props) => {
   const { jobs } = props;

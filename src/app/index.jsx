@@ -1,5 +1,7 @@
 import { Router } from 'preact-router';
-import { Logo, Footer, Header } from '@bundle-stats/ui';
+import { Logo } from '@bundle-stats/ui/lib-esm/ui/logo';
+import { Footer } from '@bundle-stats/ui/lib-esm/layout/footer';
+import { Header } from '@bundle-stats/ui/lib-esm/layout/header';
 
 import * as URLS from '../utils/urls';
 import Webpack from '../pages/webpack';

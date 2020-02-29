@@ -1,10 +1,8 @@
 import PropTypes from 'prop-types';
-import {
-  Box,
-  BundleAssetsTotalsTable,
-  BundleAssetsTotalsChartBars,
-  Container,
-} from '@bundle-stats/ui';
+import { Box } from '@bundle-stats/ui/lib-esm/ui/box';
+import { Container } from '@bundle-stats/ui/lib-esm/ui/container';
+import { BundleAssetsTotalsChartBars } from '@bundle-stats/ui/lib-esm/components/bundle-assets-totals-chart-bars';
+import { BundleAssetsTotalsTable } from '@bundle-stats/ui/lib-esm/components/bundle-assets-totals-table';
 
 const Totals = (props) => {
   const { jobs } = props;

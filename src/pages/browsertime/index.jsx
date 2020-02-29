@@ -1,6 +1,9 @@
 import PropTypes from 'prop-types';
 import Helmet from 'preact-helmet';
-import { Box, Container, BrowsertimeTable } from '@bundle-stats/ui';
+import { Box } from '@bundle-stats/ui/lib-esm/ui/box';
+import { Container } from '@bundle-stats/ui/lib-esm/ui/container';
+import { BrowsertimeTable } from '@bundle-stats/ui/lib-esm/components/browsertime-table';
+
 
 import Sources from '../../components/sources';
 import config from './config.json';

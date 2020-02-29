@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Container } from '@bundle-stats/ui';
+import { Container } from '@bundle-stats/ui/lib-esm/ui/container';
 import cx from 'classnames';
 
 import Add from './add';
