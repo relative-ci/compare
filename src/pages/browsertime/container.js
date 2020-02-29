@@ -1,4 +1,5 @@
 import { compose, withProps } from 'recompose';
+import { createJobs } from '@bundle-stats/utils';
 
 import withSources from '../../hocs/with-sources';
 import withRuns from '../../hocs/with-runs';
@@ -9,18 +10,17 @@ const metaMap = {
   connectivity: 'info.connectivity.profile',
 };
 
-const createJobs = (sources) => sources.map(({ res }, index) => ({
-  internalBuildNumber: index + 1,
-  rawData: {
+const createBrowsertimeJobs = (sources) => createJobs(
+  sources.map(({ res }) => ({
     browsertime: res,
-  },
-}));
+  })),
+);
 
 const enhance = compose(
   withSources(),
   withRuns(metaMap),
   withProps(({ sources }) => ({
-    jobs: createJobs(sources),
+    jobs: createBrowsertimeJobs(sources),
   })),
 );
 
