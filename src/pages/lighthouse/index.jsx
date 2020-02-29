@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
-import { Box, Container, LighthouseTable } from '@bundle-stats/ui';
+import { Box } from '@bundle-stats/ui/lib-esm/ui/box';
+import { Container } from '@bundle-stats/ui/lib-esm/ui/container';
+import { LighthouseTable } from '@bundle-stats/ui/lib-esm/components/lighthouse-table';
 
 import Helmet from '../../components/helmet';
 import Sources from '../../components/sources';

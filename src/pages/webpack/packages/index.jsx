@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
-import { Box, BundlePackages, Container } from '@bundle-stats/ui';
+import { Box } from '@bundle-stats/ui/lib-esm/ui/box';
+import { Container } from '@bundle-stats/ui/lib-esm/ui/container';
+import { BundlePackages } from '@bundle-stats/ui/lib-esm/components/bundle-packages';
 
 const Packages = (props) => {
   const { jobs } = props;

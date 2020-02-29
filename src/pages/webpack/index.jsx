@@ -2,7 +2,9 @@ import Router from 'preact-router';
 import Match from 'preact-router/match';
 import PropTypes from 'prop-types';
 import { isEmpty, last } from 'lodash';
-import { Container, Summary, Tabs } from '@bundle-stats/ui';
+import { Container } from '@bundle-stats/ui/lib-esm/ui/container';
+import { Tabs } from '@bundle-stats/ui/lib-esm/ui/tabs';
+import { Summary } from '@bundle-stats/ui/lib-esm/components/summary';
 import { createStatsSummary } from '@bundle-stats/utils';
 
 import Helmet from '../../components/helmet';
@@ -54,7 +56,20 @@ const Webpack = (props) => {
       {!isEmpty(jobs) && (
         <div>
           <Container>
-            <Summary data={getSummaryData(jobs)} />
+            <Summary
+              data={getSummaryData(jobs)}
+              keys={[
+                'webpack.totalSizeByTypeALL',
+                'webpack.totalInitialSizeJS',
+                'webpack.totalInitialSizeCSS',
+                'webpack.cacheInvalidation',
+                'webpack.moduleCount',
+                'webpack.chunkCount',
+                'webpack.assetCount',
+                'webpack.packageCount',
+                'webpack.duplicatePackagesCount',
+              ]}
+            />
           </Container>
           <Container className={css.tabs}>
             <Match>
