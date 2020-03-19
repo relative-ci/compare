@@ -82,7 +82,7 @@
     "babel-plugin-preact-require": "1.0.0",
     "bundle-stats": "1.15.8",
     "copy-webpack-plugin": "5.1.1",
-    "coveralls": "3.0.9",
+    "coveralls": "3.0.11",
     "cross-env": "7.0.2",
     "css-loader": "3.4.2",
     "cssnano": "4.1.10",
