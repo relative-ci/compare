@@ -49,7 +49,7 @@
     "@bundle-stats/ui": "2.1.1",
     "@bundle-stats/utils": "2.2.0",
     "@moonwalker/orbit-ui": "1.14.12",
-    "@storybook/react": "5.3.17",
+    "@storybook/react": "5.3.18",
     "classnames": "2.2.6",
     "convert-units": "2.3.4",
     "core-js": "3.6.4",
