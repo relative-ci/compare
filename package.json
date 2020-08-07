@@ -63,7 +63,7 @@
     "react-dom": "^16.12.0",
     "recompose": "0.30.0",
     "uuid": "^7.0.0",
-    "whatwg-fetch": "3.0.0"
+    "whatwg-fetch": "3.4.0"
   },
   "devDependencies": {
     "@babel/core": "7.10.4",
