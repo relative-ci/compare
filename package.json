@@ -48,7 +48,7 @@
     "@babel/polyfill": "7.10.4",
     "@bundle-stats/ui": "2.2.0",
     "@bundle-stats/utils": "2.2.0",
-    "@moonwalker/orbit-ui": "1.14.14",
+    "@moonwalker/orbit-ui": "1.14.17",
     "@storybook/react": "5.3.19",
     "classnames": "2.2.6",
     "convert-units": "2.3.4",
