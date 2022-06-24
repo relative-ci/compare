@@ -50,7 +50,7 @@
     "@bundle-stats/utils": "2.2.0",
     "@moonwalker/orbit-ui": "1.14.26",
     "@storybook/react": "5.3.21",
-    "classnames": "2.2.6",
+    "classnames": "2.3.1",
     "convert-units": "2.3.4",
     "core-js": "3.8.3",
     "ganalytics": "^3.1.3",
