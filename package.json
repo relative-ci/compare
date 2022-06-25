@@ -100,7 +100,7 @@
     "jest": "25.5.4",
     "mini-css-extract-plugin": "2.6.1",
     "postcss": "8.2.4",
-    "postcss-loader": "3.0.0",
+    "postcss-loader": "7.0.0",
     "stats-webpack-plugin": "0.7.0",
     "stylelint": "13.13.1",
     "stylelint-config-css-modules": "2.3.0",
