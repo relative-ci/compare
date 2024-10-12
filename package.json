@@ -46,7 +46,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "7.12.1",
-    "@bundle-stats/ui": "3.3.10",
+    "@bundle-stats/ui": "4.16.0",
     "@bundle-stats/utils": "3.3.10",
     "@moonwalker/orbit-ui": "1.14.26",
     "@storybook/react": "5.3.21",
