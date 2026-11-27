@@ -62,7 +62,7 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "recompose": "0.30.0",
-    "uuid": "^7.0.0",
+    "uuid": "^11.0.0",
     "whatwg-fetch": "3.6.2"
   },
   "devDependencies": {
